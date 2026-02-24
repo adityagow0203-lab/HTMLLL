@@ -1,0 +1,192 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Sorryyy Hanshi ✨</title>
+
+<link href="https://fonts.googleapis.com/css2?family=Playfair+Display&family=Poppins:wght@300;500&display=swap" rel="stylesheet">
+
+<style>
+body {
+    margin: 0;
+    padding: 0;
+    font-family: 'Poppins', sans-serif;
+    background: linear-gradient(135deg, #ffd6e8, #ffc0cb, #ffb6d9);
+    color: white;
+    text-align: center;
+    overflow-x: hidden;
+}
+
+.section {
+    min-height: 100vh;
+    padding: 60px 20px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+
+h1 {
+    font-family: 'Playfair Display', serif;
+    font-size: 3em;
+    margin-bottom: 10px;
+    animation: fadeIn 2s ease-in-out;
+}
+
+.subtitle {
+    font-size: 1.2em;
+    margin-bottom: 30px;
+    opacity: 0.9;
+}
+
+.card {
+    background: rgba(255,255,255,0.15);
+    backdrop-filter: blur(12px);
+    border-radius: 25px;
+    padding: 30px;
+    margin: 20px;
+    max-width: 700px;
+    box-shadow: 0 8px 25px rgba(0,0,0,0.15);
+}
+
+.peony {
+    width: 260px;
+    border-radius: 20px;
+    margin: 20px 0;
+}
+
+.gif-container img {
+    width: 180px;
+    margin: 8px;
+    border-radius: 15px;
+}
+
+.button {
+    margin-top: 20px;
+    padding: 12px 30px;
+    background: white;
+    color: #ff69b4;
+    border-radius: 30px;
+    text-decoration: none;
+    font-weight: 500;
+    transition: 0.3s;
+    cursor: pointer;
+}
+
+.button:hover {
+    background: #ff69b4;
+    color: white;
+}
+
+.hidden {
+    display: none;
+}
+
+@keyframes fadeIn {
+    from {opacity: 0; transform: translateY(20px);}
+    to {opacity: 1; transform: translateY(0);}
+}
+</style>
+</head>
+
+<body>
+
+<!-- PAGE 1 -->
+<div class="section" id="page1">
+    <h1>Sorryyy Hanshi ✨</h1>
+    <p class="subtitle">Distance is temporary. My feelings are permanent.</p>
+
+    <div class="card">
+        <p>
+        Hanshi… I know I messed up.  
+        Not villain arc. Not ego mode.  
+        Just human-who-loves-you-too-much mode.  
+        And I am genuinely sorryyy ✨
+        </p>
+
+        <img class="peony" src="https://images.unsplash.com/photo-1525310072745-f49212b5ac6d" alt="Pink Peony Bouquet">
+
+        <p>
+        If apologies were flowers,  
+        I’d send you infinite pink peonies.  
+        Since teleportation isn’t unlocked yet,  
+        here’s a digital bouquet.
+        </p>
+    </div>
+
+    <div class="card gif-container">
+        <img src="https://media.giphy.com/media/3oriO0OEd9QIDdllqo/giphy.gif">
+        <img src="https://media.giphy.com/media/l2YWrHHVr7qQpwzi8/giphy.gif">
+        <img src="https://media.giphy.com/media/26BRv0ThflsHCqDrG/giphy.gif">
+        <img src="https://media.giphy.com/media/xT0xeJpnrWC4XWblEk/giphy.gif">
+        <img src="https://media.giphy.com/media/5GoVLqeAOo6PK/giphy.gif">
+        <img src="https://media.giphy.com/media/MDJ9IbxxvDUQM/giphy.gif">
+        <img src="https://media.giphy.com/media/1Bd7DmRvbhV5UPkoDw/giphy.gif">
+        <img src="https://media.giphy.com/media/3oriO6qJiXajN0TyDu/giphy.gif">
+    </div>
+
+    <div class="card">
+        <p>
+        I promise to listen better.  
+        Understand deeper.  
+        Love softer.  
+        Choose you — every single time.
+        </p>
+
+        <div class="button" onclick="nextPage()">Next ✨</div>
+    </div>
+</div>
+
+<!-- PAGE 2 -->
+<div class="section hidden" id="page2">
+    <h1>I Love You Hanshi ✨</h1>
+
+    <div class="card">
+        <p>
+        You are my calm.  
+        My chaos.  
+        My favorite notification.  
+        My safest place.  
+        My person.
+        </p>
+
+        <p>
+        No distance.  
+        No mistake.  
+        No argument  
+        could ever make me stop loving you.
+        </p>
+
+        <p>
+        You matter to me more than words can hold.  
+        And I will keep proving that. ✨
+        </p>
+    </div>
+
+    <div class="card gif-container">
+        <img src="https://media.giphy.com/media/3oz8xAFtqoOUUrsh7W/giphy.gif">
+        <img src="https://media.giphy.com/media/26FLdmIp6wJr91JAI/giphy.gif">
+        <img src="https://media.giphy.com/media/l4FGpPki5v2Bcd6Ss/giphy.gif">
+        <img src="https://media.giphy.com/media/26gsjCZpPolPr3sBy/giphy.gif">
+    </div>
+
+    <div class="card">
+        <p>
+        Forever choosing you.  
+        Forever loving you.  
+        Forever us. ✨
+        </p>
+    </div>
+</div>
+
+<script>
+function nextPage() {
+    document.getElementById("page1").classList.add("hidden");
+    document.getElementById("page2").classList.remove("hidden");
+    window.scrollTo(0,0);
+}
+</script>
+
+</body>
+</html>
